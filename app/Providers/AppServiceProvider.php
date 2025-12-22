@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
         // Register TodoPolicy
         Gate::policy(Todo::class, TodoPolicy::class);
 
-        if(config('app.env') === 'production') {
+        if (env('APP_ENV') === 'production' || request()->isSecure()) {
             URL::forceScheme('https');
         }
     }
