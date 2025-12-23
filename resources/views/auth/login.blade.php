@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- AUTHENTICATION: Login form for user authentication -->
 <div class="min-h-screen flex items-center justify-center px-4 py-8">
     <div class="w-full max-w-md">
         <!-- Login Card -->
@@ -119,26 +120,7 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Demo Credentials -->
-        <div class="mt-6 glass rounded-lg p-4 border border-gray-200/30">
-            <h3 class="text-xs font-medium text-gray-800 mb-2 flex items-center">
-                <div class="w-6 h-6 rounded-lg bg-gradient-to-br from-violet-500/10 to-violet-600/10 flex items-center justify-center mr-2">
-                    <i class="bi bi-info-circle text-violet-600 text-xs"></i>
-                </div>
-                Demo Credentials
-            </h3>
-            <div class="space-y-1.5">
-                <div class="flex items-center justify-between text-xs">
-                    <span class="text-gray-600">Email:</span>
-                    <code class="bg-gray-50 px-2 py-0.5 rounded text-gray-700 font-mono">user@example.com</code>
-                </div>
-                <div class="flex items-center justify-between text-xs">
-                    <span class="text-gray-600">Password:</span>
-                    <code class="bg-gray-50 px-2 py-0.5 rounded text-gray-700 font-mono">password</code>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 
@@ -167,24 +149,24 @@
 </style>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Demo credentials auto-fill
-        const demoCredentials = document.querySelector('.glass:last-child');
-        const emailInput = document.getElementById('email');
-        const passwordInput = document.getElementById('password');
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     // Demo credentials auto-fill
+    //     const demoCredentials = document.querySelector('.glass:last-child');
+    //     const emailInput = document.getElementById('email');
+    //     const passwordInput = document.getElementById('password');
         
-        if (demoCredentials && emailInput && passwordInput) {
-            demoCredentials.addEventListener('click', function() {
-                emailInput.value = 'user@example.com';
-                passwordInput.value = 'password';
+    //     if (demoCredentials && emailInput && passwordInput) {
+    //         demoCredentials.addEventListener('click', function() {
+    //             emailInput.value = 'user@example.com';
+    //             passwordInput.value = 'password';
                 
-                // Add visual feedback
-                demoCredentials.classList.add('bg-accent-50/30', 'border-accent-200');
-                setTimeout(() => {
-                    demoCredentials.classList.remove('bg-accent-50/30', 'border-accent-200');
-                }, 1000);
-            });
-        }
+    //             // Add visual feedback
+    //             demoCredentials.classList.add('bg-accent-50/30', 'border-accent-200');
+    //             setTimeout(() => {
+    //                 demoCredentials.classList.remove('bg-accent-50/30', 'border-accent-200');
+    //             }, 1000);
+    //         });
+    //     }
         
         // Add focus animation to inputs
         const inputs = document.querySelectorAll('input[type="email"], input[type="password"], input[type="text"]');

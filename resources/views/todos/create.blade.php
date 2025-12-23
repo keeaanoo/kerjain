@@ -151,38 +151,7 @@
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Quick Actions -->
-                <div class="glass rounded-xl overflow-hidden shadow-elegant border border-gray-200/30">
-                    <div class="p-4">
-                        <h3 class="font-medium text-gray-800 mb-3 flex items-center text-sm">
-                            <div class="w-6 h-6 rounded-lg bg-gradient-to-br from-accent-500/10 to-accent-600/10 flex items-center justify-center mr-2">
-                                <i class="bi bi-lightning text-accent-600 text-xs"></i>
-                            </div>
-                            Quick Actions
-                        </h3>
-                        <div class="space-y-2">
-                            <a href="{{ route('todos.index') }}" class="flex items-center p-2.5 glass border border-gray-200/50 rounded-lg hover:bg-gray-50/50 hover-lift transition-all group">
-                                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-gray-500/10 to-gray-600/10 flex items-center justify-center mr-2 group-hover:from-gray-500/20 group-hover:to-gray-600/20 transition-all">
-                                    <i class="bi bi-grid-1x2 text-gray-600 text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-gray-800 text-xs">All Tasks</div>
-                                    <div class="text-gray-500 text-xs">View your todo list</div>
-                                </div>
-                            </a>
-                            <a href="{{ route('home') }}" class="flex items-center p-2.5 glass border border-gray-200/50 rounded-lg hover:bg-gray-50/50 hover-lift transition-all group">
-                                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-accent-500/10 to-accent-600/10 flex items-center justify-center mr-2 group-hover:from-accent-500/20 group-hover:to-accent-600/20 transition-all">
-                                    <i class="bi bi-house text-accent-600 text-sm"></i>
-                                </div>
-                                <div>
-                                    <div class="font-medium text-gray-800 text-xs">Dashboard</div>
-                                    <div class="text-gray-500 text-xs">Go to home</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>

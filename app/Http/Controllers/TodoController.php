@@ -6,6 +6,9 @@ use App\Models\Todo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+// BACKEND: Main controller handling CRUD operations for todos
+// AUTHENTICATION: Uses auth middleware to protect all routes
+// WEBSERVICE: Supports both HTML and JSON responses for API calls
 class TodoController extends Controller
 {
     public function __construct()

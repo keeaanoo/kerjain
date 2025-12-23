@@ -138,7 +138,7 @@
                     Kerjain
                 </h1>
                 <p class="text-gray-500 text-sm">
-                    Organize your tasks with elegance
+                    Organize your tasks
                 </p>
             </div>
             

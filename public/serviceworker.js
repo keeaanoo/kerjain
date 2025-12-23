@@ -1,3 +1,4 @@
+// PWA: Service Worker for caching and offline functionality
 const CACHE_NAME = 'kerjain-todo-v1';
 const urlsToCache = [
   '/',
@@ -8,7 +9,7 @@ const urlsToCache = [
   '/js/app.js'
 ];
 
-// Install Service Worker
+// PWA: Install event - cache initial resources
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
@@ -19,7 +20,7 @@ self.addEventListener('install', event => {
   );
 });
 
-// Fetch events
+// PWA: Fetch event - serve from cache or network
 self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
@@ -34,7 +35,7 @@ self.addEventListener('fetch', event => {
   );
 });
 
-// Update Service Worker
+// PWA: Activate event - clean up old caches
 self.addEventListener('activate', event => {
   const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(

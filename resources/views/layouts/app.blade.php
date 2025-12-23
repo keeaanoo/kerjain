@@ -1,3 +1,5 @@
+<!-- FRONTEND: Main layout template using Blade templating engine -->
+<!-- PWA: Contains PWA meta tags and service worker registration -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +11,7 @@
     <!-- Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Tailwind Configuration for More Elegant Design -->
+    <!-- Tailwind Configuration -->
     <script>
         tailwind.config = {
             theme: {

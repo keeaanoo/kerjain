@@ -6,6 +6,8 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 
+// BACKEND: Eloquent model for Todo entity
+// DATABASE: Defines database table structure and relationships
 class Todo extends Model
 {
     use HasFactory;
