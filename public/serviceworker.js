@@ -1,12 +1,13 @@
 // PWA: Service Worker for caching and offline functionality
-const CACHE_NAME = 'kerjain-todo-v1';
+const CACHE_NAME = 'kerjain-todo-v2';
 const urlsToCache = [
   '/',
   '/login',
   '/register',
   '/todos',
   '/css/app.css',
-  '/js/app.js'
+  '/js/app.js',
+  '/manifest.json'
 ];
 
 // PWA: Install event - cache initial resources
